@@ -8,37 +8,52 @@
     <link rel="stylesheet" href="index.css">
     <style>
         .legal-content {
-            padding-top: 120px;
+            padding-top: 110px;
             padding-bottom: 60px;
             line-height: 1.8;
         }
 
         .legal-box {
-            background: #111;
-            border: 1px solid #333;
-            padding: 40px;
-            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border);
+            padding: 30px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+        }
+
+        .legal-box h1 {
+            margin-top: 0;
         }
 
         .legal-box h2 {
-            color: #72d572;
+            color: #ffffff;
             margin-top: 30px;
-            border-bottom: 1px solid #222;
+            border-bottom: 1px solid var(--border);
             padding-bottom: 10px;
         }
 
         .legal-box p,
         .legal-box li {
-            color: #ccc;
+            color: var(--text-muted);
             font-size: 0.95rem;
         }
 
         .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #72d572;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 16px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            color: #d5fff5;
+            border: 1px solid rgba(43, 198, 168, 0.35);
+            border-radius: 999px;
+            padding: 0.45rem 0.85rem;
+            background: rgba(43, 198, 168, 0.12);
+            transition: transform 0.2s ease;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
         }
     </style>
 </head>
