@@ -247,6 +247,9 @@ nav {
   bottom: -2px;
   width: 100%;
   line-height: 0;
+  opacity: 0.82;
+  backdrop-filter: blur(3px);
+  animation: wave-float 8s ease-in-out infinite;
 }
 
 .waves {
@@ -255,10 +258,15 @@ nav {
   max-height: 140px;
   height: 13vh;
   margin-bottom: -7px;
+  filter: drop-shadow(0 -8px 26px rgba(126, 255, 221, 0.22));
 }
 
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:last-child {
+  opacity: 0.56;
 }
 
 .parallax > use:nth-child(1) {
@@ -283,6 +291,17 @@ nav {
 
   100% {
     transform: translate3d(85px, 0, 0);
+  }
+}
+
+@keyframes wave-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
   }
 }
 
@@ -312,20 +331,46 @@ nav {
 
 .project-visual {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-right: 1px solid var(--border);
   background: #020a15;
 }
 
 .carousel,
 .carousel-container {
-  height: 100%;
+  width: min(100%, 560px);
 }
 
-.carousel-img {
+.carousel {
+  padding: 1.2rem;
+}
+
+/* Conteneur carré dédié au carrousel pour préserver un ratio 1:1 responsive. */
+.carousel-container {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: none;
+}
+
+.carousel-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none;
+  object-position: center;
+}
+
+.carousel-img {
+  position: absolute;
+  inset: 0;
 }
 
 .carousel-img.active {
