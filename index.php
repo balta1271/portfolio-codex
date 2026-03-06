@@ -61,12 +61,12 @@
                 <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
                     <defs>
                         <path id="gentle-wave"
-                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                            d="M-160 44c30 0 58-14 88-14s58 14 88 14 58-14 88-14 58 14 88 14v44h-352z" />
                     </defs>
                     <g class="parallax">
-                        <use href="#gentle-wave" x="48" y="0" fill="rgba(150, 240, 142, 0.88)" />
-                        <use href="#gentle-wave" x="48" y="3" fill="rgba(100, 143, 94, 0.63)" />
-                        <use href="#gentle-wave" x="48" y="7" fill="#1a1a1a" />
+                        <use href="#gentle-wave" x="48" y="0" fill="rgba(178, 245, 200, 0.42)" />
+                        <use href="#gentle-wave" x="48" y="3" fill="rgba(132, 203, 170, 0.31)" />
+                        <use href="#gentle-wave" x="48" y="7" fill="rgba(16, 39, 50, 0.36)" />
                     </g>
                 </svg>
             </div>
@@ -82,9 +82,15 @@
                     <div class="project-visual">
                         <div class="carousel">
                             <div class="carousel-container" id="carousel-1">
-                                <img src="img/pialpine.png" class="carousel-img active" alt="Screen 1">
-                                <img src="img/serices.png" class="carousel-img" alt="Screen 2">
-                                <img src="img/Capture d'écran 2026-02-22 002634.png" class="carousel-img" alt="Screen 3">
+                                <div class="carousel-image carousel-img active">
+                                    <img src="img/pialpine.png" alt="Screen 1">
+                                </div>
+                                <div class="carousel-image carousel-img">
+                                    <img src="img/serices.png" alt="Screen 2">
+                                </div>
+                                <div class="carousel-image carousel-img">
+                                    <img src="img/Capture d'écran 2026-02-22 002634.png" alt="Screen 3">
+                                </div>
                             </div>
                             <div class="carousel-nav">
                                 <button type="button" aria-label="Image précédente" onclick="prevSlide('carousel-1')">❮</button>
@@ -197,9 +203,15 @@
                     <div class="project-visual">
                         <div class="carousel">
                             <div class="carousel-container" id="carousel-2">
-                                <img src="img/IMG_0070.jpeg" class="carousel-img active" alt="Screen 1">
-                                <img src="img/IMG_0004.jpeg" class="carousel-img" alt="Screen 2">
-                                <img src="img/IMG_0005.jpeg" class="carousel-img" alt="Screen 3">
+                                <div class="carousel-image carousel-img active">
+                                    <img src="img/IMG_0070.jpeg" alt="Screen 1">
+                                </div>
+                                <div class="carousel-image carousel-img">
+                                    <img src="img/IMG_0004.jpeg" alt="Screen 2">
+                                </div>
+                                <div class="carousel-image carousel-img">
+                                    <img src="img/IMG_0005.jpeg" alt="Screen 3">
+                                </div>
                             </div>
                             <div class="carousel-nav">
                                 <button type="button" aria-label="Image précédente" onclick="prevSlide('carousel-2')">❮</button>
@@ -243,10 +255,18 @@
                     <div class="project-visual">
                         <div class="carousel">
                             <div class="carousel-container" id="carousel-3">
-                                <img src="img/IMG_3281.jpeg" class="carousel-img active" alt="Screen 1">
-                                <img src="img/IMG_7506.jpg" class="carousel-img" alt="Screen 2">
-                                <img src="img/IMG_7507.jpg" class="carousel-img" alt="Screen 3">
-                                <img src="img/IMG_7677.PNG" class="carousel-img" alt="Screen 4">
+                                <div class="carousel-image carousel-img active">
+                                    <img src="img/IMG_3281.jpeg" alt="Screen 1">
+                                </div>
+                                <div class="carousel-image carousel-img">
+                                    <img src="img/IMG_7506.jpg" alt="Screen 2">
+                                </div>
+                                <div class="carousel-image carousel-img">
+                                    <img src="img/IMG_7507.jpg" alt="Screen 3">
+                                </div>
+                                <div class="carousel-image carousel-img">
+                                    <img src="img/IMG_7677.PNG" alt="Screen 4">
+                                </div>
                             </div>
                             <div class="carousel-nav">
                                 <button type="button" aria-label="Image précédente" onclick="prevSlide('carousel-3')">❮</button>
@@ -286,8 +306,9 @@
                     <div class="project-visual">
                         <div class="carousel">
                             <div class="carousel-container" id="carousel-4">
-                                <img src="img/Capture d'écran 2026-02-17 112953.png" class="carousel-img active"
-                                    alt="Screen 1">
+                                <div class="carousel-image carousel-img active">
+                                    <img src="img/Capture d'écran 2026-02-17 112953.png" alt="Screen 1">
+                                </div>
                             </div>
                         </div>
                     </div>
