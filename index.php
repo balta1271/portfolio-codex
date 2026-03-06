@@ -16,11 +16,11 @@
     <header>
         <div class="container nav-flex">
             <div class="logo">PORTFOLIO</div>
-            <div class="burger" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
+            <button class="burger" type="button" onclick="toggleMenu()" aria-label="Ouvrir ou fermer le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#projets">Projets</a></li>
@@ -87,8 +87,8 @@
                                 <img src="img/Capture d'écran 2026-02-22 002634.png" class="carousel-img" alt="Screen 3">
                             </div>
                             <div class="carousel-nav">
-                                <button onclick="prevSlide('carousel-1')">❮</button>
-                                <button onclick="nextSlide('carousel-1')">❯</button>
+                                <button type="button" aria-label="Image précédente" onclick="prevSlide('carousel-1')">❮</button>
+                                <button type="button" aria-label="Image suivante" onclick="nextSlide('carousel-1')">❯</button>
                             </div>
                         </div>
                     </div>
@@ -202,8 +202,8 @@
                                 <img src="img/IMG_0005.jpeg" class="carousel-img" alt="Screen 3">
                             </div>
                             <div class="carousel-nav">
-                                <button onclick="prevSlide('carousel-2')">❮</button>
-                                <button onclick="nextSlide('carousel-2')">❯</button>
+                                <button type="button" aria-label="Image précédente" onclick="prevSlide('carousel-2')">❮</button>
+                                <button type="button" aria-label="Image suivante" onclick="nextSlide('carousel-2')">❯</button>
                             </div>
                         </div>
                     </div>
@@ -249,8 +249,8 @@
                                 <img src="img/IMG_7677.PNG" class="carousel-img" alt="Screen 4">
                             </div>
                             <div class="carousel-nav">
-                                <button onclick="prevSlide('carousel-3')">❮</button>
-                                <button onclick="nextSlide('carousel-3')">❯</button>
+                                <button type="button" aria-label="Image précédente" onclick="prevSlide('carousel-3')">❮</button>
+                                <button type="button" aria-label="Image suivante" onclick="nextSlide('carousel-3')">❯</button>
                             </div>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
                 <div class="project-showcase">
                     <div class="project-visual">
                         <div class="carousel">
-                            <div class="carousel-container" id="carousel-1">
+                            <div class="carousel-container" id="carousel-4">
                                 <img src="img/Capture d'écran 2026-02-17 112953.png" class="carousel-img active"
                                     alt="Screen 1">
                             </div>
@@ -554,25 +554,17 @@
     </footer>
 
     <script>
-        let currentIndex = 0;
-        const images = document.querySelectorAll('.carousel-img');
-
-        function showSlide(index) {
-            if (images.length === 0) return;
-            images.forEach(img => img.classList.remove('active'));
-            if (index >= images.length) currentIndex = 0;
-            else if (index < 0) currentIndex = images.length - 1;
-            else currentIndex = index;
-            images[currentIndex].classList.add('active');
-        }
-
-        function nextSlide() { showSlide(currentIndex + 1); }
-        function prevSlide() { showSlide(currentIndex - 1); }
-    </script>
-    <script>
         function nextSlide(id) {
             const container = document.getElementById(id);
+            if (!container) {
+                return;
+            }
+
             const slides = container.getElementsByClassName('carousel-img');
+            if (slides.length === 0) {
+                return;
+            }
+
             let activeIndex = 0;
 
             // Trouver l'image qui a la classe 'active'
@@ -590,7 +582,15 @@
 
         function prevSlide(id) {
             const container = document.getElementById(id);
+            if (!container) {
+                return;
+            }
+
             const slides = container.getElementsByClassName('carousel-img');
+            if (slides.length === 0) {
+                return;
+            }
+
             let activeIndex = 0;
 
             for (let i = 0; i < slides.length; i++) {
@@ -606,15 +606,19 @@
         }
     </script>
 
-<script>
-function toggleMenu() {
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector(".nav-links");
+    <script>
+        function toggleMenu() {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
 
-    burger.classList.toggle("active");
-    nav.classList.toggle("active");
-}
-</script>
+            if (!burger || !nav) {
+                return;
+            }
+
+            burger.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
 
 </body>
 
