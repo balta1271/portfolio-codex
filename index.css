@@ -24,12 +24,21 @@ html {
 
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   background:
     radial-gradient(circle at 10% 10%, rgba(43, 198, 168, 0.24), transparent 42%),
     radial-gradient(circle at 95% 20%, rgba(31, 134, 243, 0.2), transparent 44%),
     linear-gradient(160deg, #05101e 0%, #061a2f 45%, #082036 100%);
   color: var(--text-main);
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+  width: 100%;
 }
 
 img {
@@ -344,23 +353,25 @@ nav {
 }
 
 .carousel {
+  position: relative;
   padding: 1.2rem;
 }
 
-/* Conteneur carré dédié au carrousel pour préserver un ratio 1:1 responsive. */
+.project-image-container,
 .carousel-container {
   position: relative;
+  width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
 }
 
 .carousel-image {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
+  height: 100%;
   display: none;
 }
 
+.project-image-container img,
 .carousel-image img {
   width: 100%;
   height: 100%;
@@ -413,7 +424,7 @@ nav {
 
 .project-header-static h2 {
   margin: 0.8rem 0 0;
-  font-size: 1.45rem;
+  font-size: clamp(1.1rem, 2.2vw, 1.45rem);
 }
 
 .badge-tech {
@@ -432,8 +443,16 @@ nav {
 
 .project-scroll-area {
   margin-top: 1rem;
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
   padding-right: 0.4rem;
+}
+
+.project-description {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 0.2rem;
 }
 
 .project-description h2,
@@ -670,14 +689,26 @@ nav {
 }
 
 footer {
-  padding: 2rem 1rem 2.4rem;
+  min-height: 96px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #9db4d4;
   font-size: 0.86rem;
 }
 
-footer a {
+footer p {
+  margin: 0;
+  text-align: center;
+  color: inherit;
+}
+
+footer a,
+.footer-link {
   color: #d6e8ff;
+  text-decoration: underline;
 }
 
 @media (max-width: 1024px) {
@@ -741,8 +772,14 @@ footer a {
     pointer-events: auto;
   }
 
+  .nav-links a {
+    text-align: center;
+  }
+
   .hero {
-    padding-top: 104px;
+    min-height: auto;
+    padding-top: 98px;
+    padding-bottom: 110px;
   }
 
   .hero-content {
@@ -752,6 +789,22 @@ footer a {
   .code-box {
     margin-inline: auto;
     text-align: left;
+  }
+
+  .content-section {
+    padding: 2rem 0;
+  }
+
+  .project-showcase {
+    margin-top: 1.2rem;
+  }
+
+  .project-details {
+    padding: 1.2rem;
+  }
+
+  .project-description {
+    max-height: 180px;
   }
 
   .mission-grid {
@@ -768,5 +821,56 @@ footer a {
   .contact-socials {
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .code-body {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .carousel {
+    padding: 0.8rem;
+  }
+
+  .carousel-nav button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .content-section h1 {
+    font-size: 1.55rem;
+  }
+
+  .project-header-static h2 {
+    font-size: 1.05rem;
+  }
+
+  .badge-tech {
+    font-size: 0.66rem;
+  }
+
+  .skill-card,
+  .stage-main,
+  .stage-sidebar {
+    padding: 1rem;
+  }
+
+  footer {
+    min-height: 84px;
+    font-size: 0.78rem;
   }
 }

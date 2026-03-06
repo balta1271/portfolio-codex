@@ -63,8 +63,14 @@
     <header>
         <div class="container nav-flex">
             <div class="logo">PORTFOLIO</div>
+            <button class="burger" type="button" onclick="toggleMenu()" aria-label="Ouvrir ou fermer le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
                 <ul class="nav-links">
+                    <li><a href="profil.php">Profil</a></li>
                     <li><a href="index.php">Retour au site</a></li>
                 </ul>
             </nav>
@@ -120,6 +126,20 @@
             <?php echo date('Y'); ?> - Tom GUERIN
         </p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+
+            if (!burger || !nav) {
+                return;
+            }
+
+            burger.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
 
 </body>
 

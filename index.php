@@ -23,6 +23,7 @@
             </button>
             <nav>
                 <ul class="nav-links">
+                    <li><a href="profil.php">Profil</a></li>
                     <li><a href="#projets">Projets</a></li>
                     <li><a href="#competences">Compétences</a></li>
                     <li><a href="#stages">Stages</a></li>
@@ -81,7 +82,7 @@
                 <div class="project-showcase">
                     <div class="project-visual">
                         <div class="carousel">
-                            <div class="carousel-container" id="carousel-1">
+                            <div class="carousel-container project-image-container" id="carousel-1">
                                 <div class="carousel-image carousel-img active">
                                     <img src="img/pialpine.png" alt="Screen 1">
                                 </div>
@@ -202,7 +203,7 @@
                 <div class="project-showcase">
                     <div class="project-visual">
                         <div class="carousel">
-                            <div class="carousel-container" id="carousel-2">
+                            <div class="carousel-container project-image-container" id="carousel-2">
                                 <div class="carousel-image carousel-img active">
                                     <img src="img/IMG_0070.jpeg" alt="Screen 1">
                                 </div>
@@ -254,7 +255,7 @@
                 <div class="project-showcase">
                     <div class="project-visual">
                         <div class="carousel">
-                            <div class="carousel-container" id="carousel-3">
+                            <div class="carousel-container project-image-container" id="carousel-3">
                                 <div class="carousel-image carousel-img active">
                                     <img src="img/IMG_3281.jpeg" alt="Screen 1">
                                 </div>
@@ -305,7 +306,7 @@
                 <div class="project-showcase">
                     <div class="project-visual">
                         <div class="carousel">
-                            <div class="carousel-container" id="carousel-4">
+                            <div class="carousel-container project-image-container" id="carousel-4">
                                 <div class="carousel-image carousel-img active">
                                     <img src="img/Capture d'écran 2026-02-17 112953.png" alt="Screen 1">
                                 </div>
@@ -569,9 +570,7 @@
     </main>
 
     <footer>
-        <p>&copy; <?php echo date('Y'); ?> - Tom GUERIN - Portfolio auto-hébergé sur Raspberry Pi <a href="mentions.php"
-                style="color: #666; text-decoration: underline;">Mentions Légales</a></p>
-        </p>
+        <p>&copy; <?php echo date('Y'); ?> - Tom GUERIN - Portfolio auto-hébergé sur Raspberry Pi <a href="mentions.php" class="footer-link">Mentions Légales</a></p>
     </footer>
 
     <script>
