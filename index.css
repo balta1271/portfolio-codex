@@ -319,6 +319,12 @@ nav {
   padding: 3rem 0;
 }
 
+.card,
+.project,
+.section {
+  overflow: visible;
+}
+
 .content-section h1 {
   margin: 0;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
@@ -445,14 +451,34 @@ nav {
   margin-top: 1rem;
   flex: 1;
   min-height: 0;
-  overflow-y: auto;
+  overflow: visible;
   padding-right: 0.4rem;
 }
 
 .project-description {
+  overflow: visible;
+  padding-right: 0.2rem;
+}
+
+.project-perso-1 .project-description {
   max-height: 200px;
   overflow-y: auto;
-  padding-right: 0.2rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(31, 134, 243, 0.65) rgba(255, 255, 255, 0.08);
+}
+
+.project-perso-1 .project-description::-webkit-scrollbar {
+  width: 8px;
+}
+
+.project-perso-1 .project-description::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+
+.project-perso-1 .project-description::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(31, 134, 243, 0.86), rgba(43, 198, 168, 0.86));
+  border-radius: 999px;
 }
 
 .project-description h2,
