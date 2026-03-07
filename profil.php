@@ -125,6 +125,35 @@
             gap: 10px;
         }
 
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        .text-small {
+            font-size: 0.9rem;
+        }
+
+        .list-indent {
+            padding-left: 20px;
+        }
+
+        .timeline-date {
+            font-size: 0.8rem;
+        }
+
+        .veille-tags {
+            margin: 15px 0;
+        }
+
+        .cv-btn-secondary {
+            background: rgba(255, 255, 255, 0.03);
+            border-color: var(--border);
+        }
+
         @media (max-width: 900px) {
             .grid-profil {
                 grid-template-columns: 1fr;
@@ -163,15 +192,15 @@
         <div class="grid-profil">
 
             <aside class="sidebar-profil">
-                <div style="text-align: center; margin-bottom: 20px;">
+                <div class="text-center mb-20">
                     <div class="profile-avatar"></div>
                     <h3>Tom GUERIN</h3>
                     <p class="muted">Étudiant BTS SIO</p>
                 </div>
-                <p class="muted" style="font-size: 0.9rem;">option SISR</p>
+                <p class="muted text-small">option SISR</p>
                 <a href="pdf/CVpro.pdf" class="cv-btn" target="_blank">📄mon CV</a>
                 <a href="pdf/3-tableau_de_synthe_se_-_e_preuve_e4_-_bts_sio_2022.xlsx - Tableau de synthèse Épreuve E4.pdf"
-                    class="cv-btn" style="background: rgba(255,255,255,0.03); border-color: var(--border);">📊 Le tableau de
+                    class="cv-btn cv-btn-secondary">📊 Le tableau de
                     synthèse E5</a>
             </aside>
 
@@ -182,7 +211,7 @@
                     <p><strong>Option SISR :</strong> Solutions d'infrastructure, systèmes et réseaux.</p>
                     <p>Le BTS SIO forme aux métiers de la gestion d'un parc informatique. L'option SISR se concentre sur
                         :</p>
-                    <ul class="muted" style="padding-left: 20px;">
+                    <ul class="muted list-indent">
                         <li>La conception et maintenance d'infrastructures réseaux</li>
                         <li>L'administration de serveurs (Windows/Linux)</li>
                         <li>La cybersécurité et la haute disponibilité</li>
@@ -193,17 +222,17 @@
                     <h2>Mon Parcours</h2>
                     <div class="timeline-item">
                         <h4>BTS Services Informatiques aux Organisations</h4>
-                        <p class="muted" style="font-size: 0.8rem;">sep. 2024 – mai 2026 | Dijon</p>
+                        <p class="muted timeline-date">sep. 2024 – mai 2026 | Dijon</p>
                         <p>Option SISR</p>
                     </div>
                     <div class="timeline-item">
                         <h4>Université de Bourgogne</h4>
-                        <p class="muted" style="font-size: 0.8rem;">sep. 2023 – juin 2024 | Dijon</p>
+                        <p class="muted timeline-date">sep. 2023 – juin 2024 | Dijon</p>
                         <p>1ère année Licence Sciences & Techniques , parcours mathématiques / informatique</p>
                     </div>
                     <div class="timeline-item">
                         <h4>Baccalauréat général</h4>
-                        <p class="muted" style="font-size: 0.8rem;">sep. 2020 – juin 2023 | Lycée Lamartine Mâcon</p>
+                        <p class="muted timeline-date">sep. 2020 – juin 2023 | Lycée Lamartine Mâcon</p>
                         <p>Spécialités; Sciences de l'ingénieur, mathématiques, physique-chimie</p>
                     </div>
                 </section>
@@ -211,7 +240,7 @@
                 <section class="card-profil">
                     <h2>Veille Technologique</h2>
                     <p>Méthodes :<strong> Youtube, newletters, réseaux et comptes dédiés.</strong></p>
-                    <div style="margin: 15px 0;">
+                    <div class="veille-tags">
                         <span class="tag-veille">Micode - Underscore</span>
                         <span class="tag-veille">Newletters The Next Big Sh*t</span>
                         <span class="tag-veille">Discord </span>
@@ -234,7 +263,6 @@
                             <a href="pdf/MODULE 1 _ LE RGPD ET SES NOTIONS CLÉS_Attestation du Module 1.pdf"
                                 target="_blank" class="btn-mini-certif">Certification</a>
                         </li>
-                        <br>
                         <li class="certification-item">
                             <span> ☁ <strong>Certification Microsoft Azure Fundamentals (AZ-900) — bases du cloud, architecture Azure et sécurité.</strong></span>
                             <a href=""
