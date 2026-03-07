@@ -164,12 +164,12 @@
                                     </li>
                                     <br>
                                     <li>
-        Architecture applicative : Développement d’un site en PHP modulaire sans framework afin de garantir performance, légèreté et maîtrise complète de la stack logicielle. Configuration du serveur web et intégration de PHP-FPM pour un traitement efficace des requêtes dynamiques.
-    </li>
-    <br>
-    <li>
-        Infrastructure réseau : Configuration DNS et mise en production sécurisée via HTTPS. Déploiement d’un tunnel Cloudflare pour contourner les contraintes du CG-NAT imposées par le routeur, permettant l’exposition publique du serveur sans ouverture de ports entrants.
-    </li>
+                                        Architecture applicative : Développement d’un site en PHP modulaire sans framework afin de garantir performance, légèreté et maîtrise complète de la stack logicielle. Configuration du serveur web et intégration de PHP-FPM pour un traitement efficace des requêtes dynamiques.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Infrastructure réseau : Configuration DNS et mise en production sécurisée via HTTPS. Déploiement d’un tunnel Cloudflare pour contourner les contraintes du CG-NAT imposées par le routeur, permettant l’exposition publique du serveur sans ouverture de ports entrants.
+                                    </li>
                                 </ul>
                                 <h2>Sécurisation</h2>
                                 <ul>
@@ -290,9 +290,6 @@
                             </div>
                         </div>
 
-                        <!-- <div class="project-actions">
-                            <a href="https://github.com/ton-lien" class="btn-github">Voir le code (GitHub)</a>
-                        </div> -->
                     </div>
                 </div>
             </div>
