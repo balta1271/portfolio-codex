@@ -298,7 +298,7 @@
 
 
             <div class="container" id="projets-professionnels">
-                <h1>Projets Proffesionnels</h1>
+                <h1>Projets Professionnels</h1>
 
                 <div class="project-showcase">
                     <div class="project-visual">
