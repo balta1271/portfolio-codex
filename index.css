@@ -703,6 +703,11 @@ nav {
   width: 100%;
 }
 
+
+#projets-professionnels {
+  margin-top: 30px;
+}
+
 .mini-contact {
   margin-top: 2.4rem;
   border-top: 1px solid var(--border);
@@ -848,6 +853,35 @@ footer a,
 
   .project-details {
     padding: 1.2rem;
+  }
+
+  .stage-first-year {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stage-first-year .stage-sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .stage-first-year .stage-main {
+    width: 100%;
+  }
+
+  .stage-first-year .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stage-first-year .mission-card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .stage-first-year .btn-doc {
+    width: 100%;
   }
 
   .mission-grid {

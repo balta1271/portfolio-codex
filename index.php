@@ -300,7 +300,7 @@
             <!-- PROJET PROFFESSIONNELS NUMERO 1  -->
 
 
-            <div class="container">
+            <div class="container" id="projets-professionnels">
                 <h1>Projets Proffesionnels</h1>
 
                 <div class="project-showcase">
@@ -466,7 +466,7 @@
                     </div>
                 </div>
 
-                <div class="stage-interface">
+                <div class="stage-interface stage-first-year">
                     <aside class="stage-sidebar">
                         <div class="company-logo">
                             <!-- <img src="logo-entreprise.png" alt="Logo"
