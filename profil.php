@@ -236,10 +236,9 @@
                         </li>
                         <br>
                         <li class="certification-item">
-                            <span> ☁ <strong>Certifications Microsoft Azure Fundamentals (az-900)
-                                compétences de base en cloud computing, architecture Azure, sécurité et gestion des services cloud.    </strong></span>
+                            <span> ☁ <strong>Certification Microsoft Azure Fundamentals (AZ-900) — bases du cloud, architecture Azure et sécurité.</strong></span>
                             <a href=""
-                                target="_blank" class="btn-mini-certif">En cours</a>
+                                target="_blank" class="btn-mini-certif status-badge">En cours</a>
                         </li>
                     </ul>
                 </section>

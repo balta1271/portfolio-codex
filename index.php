@@ -482,13 +482,16 @@
                         </div>
 
                         <div class="stage-links">
-                            <a href="#" class="link-item">Tableau de synthèse</a>
-                            <a href="pdf/3-tableau_de_synthe_se_-_e_preuve_e4_-_bts_sio_2022.xlsx - Tableau de synthèse Épreuve E4.pdf"
-                                class="download-link">Télécharger le PDF</a>
-
-                            <a href="#" class="link-item">Attestation de stage</a>
-                            <a href="pdf/attestation_stage_schneider_btssio.pdf" class="download-link">Télécharger le
-                                PDF</a>
+                            <div class="stage-link-row">
+                                <a href="#" class="link-item">Tableau de synthèse</a>
+                                <a href="pdf/3-tableau_de_synthe_se_-_e_preuve_e4_-_bts_sio_2022.xlsx - Tableau de synthèse Épreuve E4.pdf"
+                                    class="download-link">Télécharger le PDF</a>
+                            </div>
+                            <div class="stage-link-row">
+                                <a href="#" class="link-item">Attestation de stage</a>
+                                <a href="pdf/attestation_stage_schneider_btssio.pdf" class="download-link">Télécharger le
+                                    PDF</a>
+                            </div>
                         </div>
                     </aside>
 
