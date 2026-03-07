@@ -79,7 +79,7 @@
             <div class="container">
                 <h1>Projets Personnels</h1>
 
-                <div class="project-showcase">
+                <div class="project-showcase project-perso-1">
                     <div class="project-visual">
                         <div class="carousel">
                             <div class="carousel-container project-image-container" id="carousel-1">
