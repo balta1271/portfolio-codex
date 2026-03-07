@@ -634,6 +634,14 @@ nav {
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
+.stage-interface,
+.stage-sidebar,
+.stage-main,
+.mission-card {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .mission-card:hover {
     transform: translateY(-3px);
     border-color: rgba(31, 134, 243, 0.5);
@@ -869,37 +877,35 @@ footer a,
         padding: 1.2rem;
     }
 
-    .stage-first-year {
+    .stage-interface {
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
 
-    .stage-first-year .stage-sidebar {
+    .stage-sidebar {
         width: 100%;
-        margin-bottom: 20px;
         border-right: 0;
         border-bottom: 1px solid var(--border);
     }
 
-    .stage-first-year .stage-main {
-        width: 100%;
-    }
-
-    .stage-first-year .mission-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stage-first-year .mission-card {
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .stage-first-year .btn-doc {
+    .stage-main {
         width: 100%;
     }
 
     .mission-grid {
         grid-template-columns: 1fr;
+    }
+
+    .stage-links a,
+    .btn-doc {
+        width: 100%;
+        text-align: center;
+        padding: 0.45rem 0.75rem;
+    }
+
+    .mission-card {
+        padding: 0.9rem;
     }
 
     .stage-link-row {
